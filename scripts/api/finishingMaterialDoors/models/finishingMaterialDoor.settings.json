@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finishingMaterialDoors",
+  "info": {
+    "name": "finishingMaterialDoor"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

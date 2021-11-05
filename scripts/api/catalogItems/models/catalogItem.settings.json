@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogItems",
+  "info": {
+    "name": "catalogItem"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "catalogId": {
+      "type": "integer"
+    },
+    "item": {
+      "type": "json"
+    }
+  }
+}

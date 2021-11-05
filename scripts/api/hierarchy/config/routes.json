@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hierarchy",
+      "handler": "hierarchy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hierarchy/count",
+      "handler": "hierarchy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hierarchy/:id",
+      "handler": "hierarchy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hierarchy",
+      "handler": "hierarchy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hierarchy/:id",
+      "handler": "hierarchy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hierarchy/:id",
+      "handler": "hierarchy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

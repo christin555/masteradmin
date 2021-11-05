@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "knex_migrations_lock",
+  "info": {
+    "name": "knex_migrations_lock"
+  },
+  "options": {
+    "increments": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "required": true,
+      "type": "integer"
+    },
+    "is_locked": {
+      "type": "integer"
+    }
+  }
+}

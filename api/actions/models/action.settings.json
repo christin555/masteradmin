@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actions",
+  "info": {
+    "name": "action"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entity": {
+      "required": true,
+      "type": "integer"
+    },
+    "entityId": {
+      "required": true,
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "updated_at": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media",
+  "info": {
+    "name": "media"
+  },
+  "options": {
+    "increments": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entity": {
+      "type": "integer"
+    },
+    "entityId": {
+      "required": true,
+      "type": "integer"
+    },
+    "src": {
+      "required": true,
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "isMain": {
+      "type": "boolean"
+    },
+    "isForHover": {
+      "type": "boolean"
+    },
+    "isDoor": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "name": "brand"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "integer"
+    }
+  }
+}

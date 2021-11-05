@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "knex_migrations",
+  "info": {
+    "name": "knex_migration"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "batch": {
+      "type": "integer"
+    },
+    "migration_time": {
+      "type": "datetime"
+    }
+  }
+}

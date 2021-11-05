@@ -1,0 +1,210 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryId": {
+      "model": "category"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "resistanceClass": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "metersInPackage": {
+      "type": "string"
+    },
+    "collectionId": {
+      "model": "collection"
+    },
+    "protectiveLayer": {
+      "type": "string"
+    },
+    "fireClass": {
+      "type": "string"
+    },
+    "householdGuarantee": {
+      "type": "string"
+    },
+    "collectionName": {
+      "type": "string"
+    },
+    "totalThickness": {
+      "type": "string"
+    },
+    "withHeatingFloor": {
+      "type": "string"
+    },
+    "connectionType": {
+      "type": "string"
+    },
+    "formatId": {
+      "type": "string"
+    },
+    "specials": {
+      "type": "string"
+    },
+    "surfaceTexture": {
+      "type": "string"
+    },
+    "soundproofing": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "surface": {
+      "type": "string"
+    },
+    "texture": {
+      "type": "string"
+    },
+    "tileType": {
+      "type": "string"
+    },
+    "fixationType": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "string"
+    },
+    "chamfer": {
+      "type": "string"
+    },
+    "itemsInPackage": {
+      "type": "string"
+    },
+    "packageWeight": {
+      "type": "string"
+    },
+    "guarantee": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "using": {
+      "type": "string"
+    },
+    "finishingMaterial": {
+      "type": "array"
+    },
+    "materialLength": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "substrateThickness": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "isSimple": {
+      "type": "string"
+    },
+    "link3d": {
+      "type": "string"
+    },
+    "colorFamily": {
+      "type": "string"
+    },
+    "colorName": {
+      "type": "string"
+    },
+    "abrasionResistance": {
+      "type": "string"
+    },
+    "baseBoard": {
+      "type": "string"
+    },
+    "constructionProcess": {
+      "type": "string"
+    },
+    "furnitureLegEffect": {
+      "type": "string"
+    },
+    "professionalWarranty": {
+      "type": "string"
+    },
+    "residentialWarranty": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "updated_at": {
+      "type": "datetime"
+    },
+    "alias": {
+      "required": true,
+      "type": "string"
+    },
+    "waterResistant": {
+      "type": "string"
+    },
+    "antibacterial": {
+      "type": "string"
+    },
+    "antislip": {
+      "type": "string"
+    },
+    "antistatic": {
+      "type": "string"
+    },
+    "ecofriendly": {
+      "type": "string"
+    },
+    "formaldehydeEmissionClass": {
+      "type": "string"
+    },
+    "packageVolume": {
+      "type": "string"
+    },
+    "designer": {
+      "type": "string"
+    },
+    "glossLevel": {
+      "type": "string"
+    },
+    "basisWeight": {
+      "type": "string"
+    },
+    "wearThickness": {
+      "type": "string"
+    },
+    "ecologicalCertificate": {
+      "type": "string"
+    },
+    "builtUnderlay": {
+      "type": "string"
+    },
+    "needUnderlay": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    }
+  }
+}

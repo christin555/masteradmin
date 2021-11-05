@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "name": "collection"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "nameDealer": {
+      "required": true,
+      "type": "string"
+    },
+    "priceName": {
+      "type": "string"
+    },
+    "brandId": {
+      "type": "integer"
+    },
+    "categoryId": {
+      "type": "integer"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    }
+  }
+}

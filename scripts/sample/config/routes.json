@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/$PATH",
+      "handler": "$HANDLER.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/$PATH/count",
+      "handler": "$HANDLER.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/$PATH/:id",
+      "handler": "$HANDLER.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/$PATH",
+      "handler": "$HANDLER.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/$PATH/:id",
+      "handler": "$HANDLER.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/$PATH/:id",
+      "handler": "$HANDLER.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

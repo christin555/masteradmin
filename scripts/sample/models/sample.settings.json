@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "samples",
+  "info": {
+    "name": "sample",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "private": false,
+      "required": false,
+      "unique": false
+    }
+  }
+}

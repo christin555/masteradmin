@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hierarchy",
+  "info": {
+    "name": "hierarchy"
+  },
+  "options": {
+    "increments": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "head": {
+      "required": true,
+      "type": "integer"
+    },
+    "under": {
+      "required": true,
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/finishingMaterialDoors",
+      "handler": "finishingMaterialDoor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/finishingMaterialDoors/count",
+      "handler": "finishingMaterialDoor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/finishingMaterialDoors/:id",
+      "handler": "finishingMaterialDoor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/finishingMaterialDoors",
+      "handler": "finishingMaterialDoor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/finishingMaterialDoors/:id",
+      "handler": "finishingMaterialDoor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/finishingMaterialDoors/:id",
+      "handler": "finishingMaterialDoor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

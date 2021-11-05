@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/knex_migrations",
+      "handler": "knex_migration.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/knex_migrations/count",
+      "handler": "knex_migration.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/knex_migrations/:id",
+      "handler": "knex_migration.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/knex_migrations",
+      "handler": "knex_migration.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/knex_migrations/:id",
+      "handler": "knex_migration.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/knex_migrations/:id",
+      "handler": "knex_migration.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

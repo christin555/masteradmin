@@ -1,0 +1,963 @@
+{
+  "actions": [
+    {
+      "relname": "actions",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "actions",
+      "attname": "entity",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "actions",
+      "attname": "entityId",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "int4"
+    },
+    {
+      "relname": "actions",
+      "attname": "title",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "varchar"
+    },
+    {
+      "relname": "actions",
+      "attname": "desc",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "varchar"
+    },
+    {
+      "relname": "actions",
+      "attname": "deleted_at",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "actions",
+      "attname": "created_at",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "actions",
+      "attname": "updated_at",
+      "attnotnull": false,
+      "attnum": 8,
+      "typname": "timestamptz"
+    }
+  ],
+  "articles": [
+    {
+      "relname": "articles",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "articles",
+      "attname": "title",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "articles",
+      "attname": "content",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "text"
+    },
+    {
+      "relname": "articles",
+      "attname": "type",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "int4"
+    },
+    {
+      "relname": "articles",
+      "attname": "createdAt",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "articles",
+      "attname": "deletedAt",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "articles",
+      "attname": "showOnMainPage",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "varchar"
+    }
+  ],
+  "brands": [
+    {
+      "relname": "brands",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "brands",
+      "attname": "name",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "brands",
+      "attname": "alias",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "varchar"
+    },
+    {
+      "relname": "brands",
+      "attname": "weight",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "int4"
+    }
+  ],
+  "catalogItems": [
+    {
+      "relname": "catalogItems",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "catalogItems",
+      "attname": "catalogId",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "catalogItems",
+      "attname": "item",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "jsonb"
+    }
+  ],
+  "catalogItemsCategory": [
+    {
+      "relname": "catalogItemsCategory",
+      "attname": "catalogId",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "catalogItemsCategory",
+      "attname": "catalogItemId",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "catalogItemsCategory",
+      "attname": "categoryId",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "int4"
+    }
+  ],
+  "catalogs": [
+    {
+      "relname": "catalogs",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "catalogs",
+      "attname": "title",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "catalogs",
+      "attname": "name",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "varchar"
+    }
+  ],
+  "categories": [
+    {
+      "relname": "categories",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "categories",
+      "attname": "name",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "categories",
+      "attname": "level",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "int4"
+    },
+    {
+      "relname": "categories",
+      "attname": "alias",
+      "attnotnull": true,
+      "attnum": 4,
+      "typname": "varchar"
+    },
+    {
+      "relname": "categories",
+      "attname": "isLast",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "bool"
+    },
+    {
+      "relname": "categories",
+      "attname": "img",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "varchar"
+    },
+    {
+      "relname": "categories",
+      "attname": "description",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "varchar"
+    },
+    {
+      "relname": "categories",
+      "attname": "deleted_at",
+      "attnotnull": false,
+      "attnum": 8,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "categories",
+      "attname": "created_at",
+      "attnotnull": false,
+      "attnum": 9,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "categories",
+      "attname": "updated_at",
+      "attnotnull": false,
+      "attnum": 10,
+      "typname": "timestamptz"
+    }
+  ],
+  "collections": [
+    {
+      "relname": "collections",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "collections",
+      "attname": "name",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "collections",
+      "attname": "nameDealer",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "varchar"
+    },
+    {
+      "relname": "collections",
+      "attname": "priceName",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "varchar"
+    },
+    {
+      "relname": "collections",
+      "attname": "brandId",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "int4"
+    },
+    {
+      "relname": "collections",
+      "attname": "categoryId",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "int4"
+    },
+    {
+      "relname": "collections",
+      "attname": "deleted_at",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "timestamptz"
+    }
+  ],
+  "finishingMaterialDoors": [
+    {
+      "relname": "finishingMaterialDoors",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "finishingMaterialDoors",
+      "attname": "name",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "finishingMaterialDoors",
+      "attname": "img",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "varchar"
+    }
+  ],
+  "hierarchy": [
+    {
+      "relname": "hierarchy",
+      "attname": "head",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "hierarchy",
+      "attname": "under",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "int4"
+    }
+  ],
+  "knex_migrations": [
+    {
+      "relname": "knex_migrations",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "knex_migrations",
+      "attname": "name",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "varchar"
+    },
+    {
+      "relname": "knex_migrations",
+      "attname": "batch",
+      "attnotnull": false,
+      "attnum": 3,
+      "typname": "int4"
+    },
+    {
+      "relname": "knex_migrations",
+      "attname": "migration_time",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "timestamptz"
+    }
+  ],
+  "knex_migrations_lock": [
+    {
+      "relname": "knex_migrations_lock",
+      "attname": "index",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "knex_migrations_lock",
+      "attname": "is_locked",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "int4"
+    }
+  ],
+  "media": [
+    {
+      "relname": "media",
+      "attname": "entity",
+      "attnotnull": false,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "media",
+      "attname": "entityId",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "media",
+      "attname": "src",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "varchar"
+    },
+    {
+      "relname": "media",
+      "attname": "type",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "varchar"
+    },
+    {
+      "relname": "media",
+      "attname": "isMain",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "bool"
+    },
+    {
+      "relname": "media",
+      "attname": "isForHover",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "bool"
+    },
+    {
+      "relname": "media",
+      "attname": "isDoor",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "bool"
+    }
+  ],
+  "prices": [
+    {
+      "relname": "prices",
+      "attname": "entity",
+      "attnotnull": false,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "prices",
+      "attname": "entityId",
+      "attnotnull": true,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "prices",
+      "attname": "price",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "int4"
+    },
+    {
+      "relname": "prices",
+      "attname": "oldPrice",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "int4"
+    }
+  ],
+  "products": [
+    {
+      "relname": "products",
+      "attname": "id",
+      "attnotnull": true,
+      "attnum": 1,
+      "typname": "int4"
+    },
+    {
+      "relname": "products",
+      "attname": "categoryId",
+      "attnotnull": false,
+      "attnum": 2,
+      "typname": "int4"
+    },
+    {
+      "relname": "products",
+      "attname": "name",
+      "attnotnull": true,
+      "attnum": 3,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "description",
+      "attnotnull": false,
+      "attnum": 4,
+      "typname": "text"
+    },
+    {
+      "relname": "products",
+      "attname": "resistanceClass",
+      "attnotnull": false,
+      "attnum": 5,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "size",
+      "attnotnull": false,
+      "attnum": 6,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "metersInPackage",
+      "attnotnull": false,
+      "attnum": 7,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "collectionId",
+      "attnotnull": false,
+      "attnum": 8,
+      "typname": "int4"
+    },
+    {
+      "relname": "products",
+      "attname": "protectiveLayer",
+      "attnotnull": false,
+      "attnum": 9,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "fireClass",
+      "attnotnull": false,
+      "attnum": 10,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "householdGuarantee",
+      "attnotnull": false,
+      "attnum": 11,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "collection",
+      "attnotnull": false,
+      "attnum": 12,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "totalThickness",
+      "attnotnull": false,
+      "attnum": 13,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "withHeatingFloor",
+      "attnotnull": false,
+      "attnum": 14,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "connectionType",
+      "attnotnull": false,
+      "attnum": 15,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "format",
+      "attnotnull": false,
+      "attnum": 16,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "specials",
+      "attnotnull": false,
+      "attnum": 17,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "surfaceTexture",
+      "attnotnull": false,
+      "attnum": 18,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "soundproofing",
+      "attnotnull": false,
+      "attnum": 19,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "color",
+      "attnotnull": false,
+      "attnum": 20,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "code",
+      "attnotnull": false,
+      "attnum": 21,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "surface",
+      "attnotnull": false,
+      "attnum": 22,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "texture",
+      "attnotnull": false,
+      "attnum": 23,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "tileType",
+      "attnotnull": false,
+      "attnum": 24,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "fixationType",
+      "attnotnull": false,
+      "attnum": 25,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "thickness",
+      "attnotnull": false,
+      "attnum": 26,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "chamfer",
+      "attnotnull": false,
+      "attnum": 27,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "itemsInPackage",
+      "attnotnull": false,
+      "attnum": 28,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "packageWeight",
+      "attnotnull": false,
+      "attnum": 29,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "guarantee",
+      "attnotnull": false,
+      "attnum": 30,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "country",
+      "attnotnull": false,
+      "attnum": 31,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "using",
+      "attnotnull": false,
+      "attnum": 32,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "finishingMaterial",
+      "attnotnull": false,
+      "attnum": 33,
+      "typname": "_int4"
+    },
+    {
+      "relname": "products",
+      "attname": "length",
+      "attnotnull": false,
+      "attnum": 34,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "width",
+      "attnotnull": false,
+      "attnum": 35,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "substrateThickness",
+      "attnotnull": false,
+      "attnum": 36,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "height",
+      "attnotnull": false,
+      "attnum": 37,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "isSimple",
+      "attnotnull": false,
+      "attnum": 38,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "link3d",
+      "attnotnull": false,
+      "attnum": 39,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "colorFamily",
+      "attnotnull": false,
+      "attnum": 40,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "colorName",
+      "attnotnull": false,
+      "attnum": 41,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "abrasionResistance",
+      "attnotnull": false,
+      "attnum": 42,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "baseBoard",
+      "attnotnull": false,
+      "attnum": 43,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "constructionProcess",
+      "attnotnull": false,
+      "attnum": 44,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "furnitureLegEffect",
+      "attnotnull": false,
+      "attnum": 45,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "professionalWarranty",
+      "attnotnull": false,
+      "attnum": 46,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "residentialWarranty",
+      "attnotnull": false,
+      "attnum": 47,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "deleted_at",
+      "attnotnull": false,
+      "attnum": 48,
+      "typname": "timestamp"
+    },
+    {
+      "relname": "products",
+      "attname": "created_at",
+      "attnotnull": false,
+      "attnum": 49,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "products",
+      "attname": "updated_at",
+      "attnotnull": false,
+      "attnum": 50,
+      "typname": "timestamptz"
+    },
+    {
+      "relname": "products",
+      "attname": "alias",
+      "attnotnull": true,
+      "attnum": 51,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "waterResistant",
+      "attnotnull": false,
+      "attnum": 52,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "antibacterial",
+      "attnotnull": false,
+      "attnum": 53,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "antislip",
+      "attnotnull": false,
+      "attnum": 54,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "antistatic",
+      "attnotnull": false,
+      "attnum": 55,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "ecofriendly",
+      "attnotnull": false,
+      "attnum": 56,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "formaldehydeEmissionClass",
+      "attnotnull": false,
+      "attnum": 57,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "packageVolume",
+      "attnotnull": false,
+      "attnum": 58,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "designer",
+      "attnotnull": false,
+      "attnum": 59,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "glossLevel",
+      "attnotnull": false,
+      "attnum": 60,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "basisWeight",
+      "attnotnull": false,
+      "attnum": 61,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "wearThickness",
+      "attnotnull": false,
+      "attnum": 62,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "ecologicalCertificate",
+      "attnotnull": false,
+      "attnum": 63,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "builtUnderlay",
+      "attnotnull": false,
+      "attnum": 64,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "needUnderlay",
+      "attnotnull": false,
+      "attnum": 65,
+      "typname": "varchar"
+    },
+    {
+      "relname": "products",
+      "attname": "material",
+      "attnotnull": false,
+      "attnum": 66,
+      "typname": "varchar"
+    }
+  ]
+}

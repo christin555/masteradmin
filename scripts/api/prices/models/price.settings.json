@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price"
+  },
+  "options": {
+    "increments": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entity": {
+      "type": "integer"
+    },
+    "entityId": {
+      "required": true,
+      "type": "integer"
+    },
+    "price": {
+      "required": true,
+      "type": "integer"
+    },
+    "oldPrice": {
+      "type": "integer"
+    }
+  }
+}

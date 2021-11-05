@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category"
+  },
+  "options": {
+    "increments": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "level": {
+      "required": true,
+      "type": "integer"
+    },
+    "alias": {
+      "required": true,
+      "type": "string"
+    },
+    "isLast": {
+      "type": "boolean"
+    },
+    "img": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "updated_at": {
+      "type": "datetime"
+    }
+  }
+}
