@@ -17,8 +17,9 @@
       "type": "integer"
     },
     "src": {
-      "required": true,
-      "type": "string"
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
     },
     "type": {
       "type": "string"

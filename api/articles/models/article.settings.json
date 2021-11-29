@@ -7,7 +7,9 @@
   "options": {
     "increments": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "soft": ["deletedAt"]
+  },
   "attributes": {
     "title": {
       "type": "string"
